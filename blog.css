@@ -56,7 +56,7 @@ li{
     background-color: #333;
     color:#ffffff;
 }
-.text-1 h1{
+.text-1 h1{ 
     margin:30px;
 }
 .process{
@@ -65,8 +65,9 @@ li{
 .para{
     margin:30px;
 }
-.button{
+.container button{
     margin-left:30px;
+    margin-bottom:30px;
 }
 .hide{
     display:none;
@@ -74,6 +75,16 @@ li{
 #btn{
     padding:5px;
     cursor:pointer;
+}
+#btn-1{
+    padding:5px;
+    cursor:pointer;
+}
+.main button{
+    margin-left: 30px;
+    margin-bottom:30px;
+    background-color: #333;
+    color:#ffffff;
 }
 .footer {
     background-color: #333;
