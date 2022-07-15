@@ -19,53 +19,103 @@ body{
     justify-content:center;
     align-items:center;
 }
-.process p{
-    position: absolute;
-    margin-top: 0.5rem;
-    color :#d28f6e;
-}
 .process-1{
     display:flex;
-}
-#text-1{
-    position: relative;
+    align-items:center;
 }
 .text{
     border-radius: 1rem;
     width:2rem;
     height:2rem;
-    border:1px solid #fff2d2;
+    border:1px solid #d28f6e;
     text-align:center;
     font-weight:bold;
     line-height:1.9rem;
     display: inline-block;
+    color:#d28f6e;
+    transition: color 0.3s linear 0.3s, background-color 0.3s linear 0.3s;
+}
+#text1{
     color:#fff2d2;
+    background-color:#d28f6e;
+}
+.bar{
+    height: 0.3rem;
+    width: 5rem;
+}
+#prog1{
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s linear ;
     background-color: #d28f6e;
 }
-.line{
-    height:0.3rem;
-    width:5rem;
+#prog2{
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s linear ;
+    background-color: #d28f6e;
 }
-.process-2{
-    display:flex;
+#prog3{
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s linear ;
+    background-color: #d28f6e;
+}
+#prog4{
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s linear ;
+    background-color: #d28f6e;
+}
+#text-1{
+    position: relative;
+}
+#text-1 > p{
+    position: absolute;
+    bottom: -70%;
+    color: #d28f6e;
+    width: max-content;
+    transition: all 0.3s linear 0.3s;
+    left: -72%;
 }
 #text-2{
     position: relative;
 }
-.process-3{
-    display:flex;
+#text-2 > p{
+    position: absolute;
+    bottom: -70%;
+    color: #d28f6e;
+    opacity:0;
+    width: max-content;
+    transition: all 0.3s linear 0.3s;
+    left: -72%;
 }
 #text-3{
     position: relative;
 }
-.process-4{
-    display:flex;
+#text-3 > p{
+    position: absolute;
+    bottom: -70%;
+    color: #d28f6e;
+    opacity:0;
+    width: max-content;
+    transition: all 0.3s linear 0.3s;
+    left: -100%;
 }
 #text-4{
     position: relative;
 }
+#text-4 > p{
+    position: absolute;
+    bottom: -70%;
+    color: #d28f6e;
+    opacity: 0;
+    width: max-content;
+    transition: all 0.3s linear 0.3s;
+    left: -72%;
+}
 .buttons{
-    margin-top:6rem;
+    margin-top:5rem;
 }
 button{
     padding:5px 10px;

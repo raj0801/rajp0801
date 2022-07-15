@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Order</title>    
+    <title>Order</title>
     <link rel="stylesheet" href="practice.css">
 </head>
 
@@ -11,38 +11,71 @@
         <div class="process">
             <div class="process-1">
                 <div id="text-1">
-                    <span class="text">1</span>
+                    <span class="text" id="text1">1</span>
                     <p>Order Placed</p>
-                    <div class="line"></div>
+                </div>
+                <div class="bar">
+                    <div id="prog1"></div>
                 </div>
             </div>
-            <div class="process-2">
+            <div class="process-1">
                 <div id="text-2">
-                    <span class="text">2</span>
+                    <span class="text" id="text2">2</span>
                     <p>Order Ready</p>
-                    <div class="line"></div>
+                </div>
+                <div class="bar">
+                    <div id="prog2"></div>
                 </div>
             </div>
-            <div class="process-3">
+            <div class="process-1">
                 <div id="text-3">
-                    <span class="text">3</span>
+                    <span class="text" id="text3">3</span>
                     <p>Out For Delivery</p>
-                    <div class="line"></div>
+                </div>
+                <div class="bar">
+                    <div id="prog3"></div>
                 </div>
             </div>
-            <div class="process-4">
+            <div class="process-1">
                 <div id="text-4">
-                    <span class="text">4</span>
+                    <span class="text" id="text4">4</span>
                     <p>Delivered</p>
-                    <div class="line"></div>
+                </div>
+                <div class="bar">
+                    <div id="prog4"></div>
                 </div>
             </div>
         </div>
         <div class="buttons">
-            <button>Prev Step</button>
-            <button>Next Step</button>
+            <button onclick="prevStep()">Prev Step</button>
+            <button onclick="nextStep()">Next Step</button>
         </div>
     </div>
+
+    <script>
+        let step= 1;
+        const nextStep = () => {
+            if (step > 3) return;
+            let bar = document.querySelector(`#prog${step}`);
+            let text = document.querySelector(`#text${step + 1}`);
+            bar.style.width = '100%';
+            text.style.color = '#fff2d2'
+            text.style.backgroundColor = '#d28f6e'
+            text.parentElement.children[1].style.opacity = '1';
+            step++;
+        }
+        const prevStep = () => {
+            if (step < 2) return;
+            let bar = document.querySelector(`#prog${step - 1}`);
+            let text = document.querySelector(`#text${step}`);
+            text.parentElement.children[1].style.opacity = '0';
+            text.style.backgroundColor = '#fff2d2'
+            text.style.color = '#d28f6e'
+            bar.style.width = '0%';
+            step--;
+            console.log(step);
+        }
+    </script>
 </body>
 
 </html>
