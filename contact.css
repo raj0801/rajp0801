@@ -130,6 +130,24 @@ button:hover{
     text-align:center;
     font-size: 2rem;
 }
+.input >label>span{
+    display: inline-block;
+    transition: 0.2s ease;
+    color:gray;
+    min-width:5px;
+}
+.input>input:focus, .input>input:valid{
+    border-color:#333;
+}
+.input>input:focus+ label>span{
+    transform:translateY(-30px);
+    color:#333;
+}
+.input>label{
+    position:absolute;
+    top:0;
+    left:0;
+}
 .footer {
     background-color: #333;
     margin-top:50px;

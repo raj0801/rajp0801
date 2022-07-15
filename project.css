@@ -52,91 +52,43 @@ li{
     align-items: center;
     justify-content: space-between;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-}
-.text{
-    margin:50px;
-    text-align:center;
-}
-.text h1{
-    margin-bottom:1rem;
-}
-.text p{
-    font-size:1.5rem;
-    margin-block:1rem;
-    text-align:center;
-}
-.bottom-line{
-    height:2px;
-    width: 100px;
-    background-color: #ffbc00;
-    margin:auto auto;
-}
-.main{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    margin:1.5rem auto;
-    width:85vw;
+.container > h1{
+    height: 400px;
+    width: 100%;
+    color:#333;
+    background-image: url("https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:grid;
     place-items: center;
-    height:130vh;
+    font-size:4.5rem;
+    opacity:0.8;
 }
-.images{
-    height: calc(130vh/3);
-    width: calc(85vw/3);
-    position:relative;
-    z-index:7;
-    overflow:hidden;
+.projects{
+    line-height: 1.5rem;
+    background-color:#333;
+    color:#fff;
 }
-.images::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity:0.9s;
-    height: 100%;
-    width: 100%;
-    transition: 0.8s ease;
-    background-color:#ffbb00e7;
-    transform: translateX(-100%) translateY(-100%);
+.title{
+    padding:1rem;
 }
-.images:hover::after{
-    transform: translateX(0);
-  }
-  
-  .images:hover img{
-    transform: scale(1.2);
-    z-index: 1;
-  }
-  .images:hover .image-text{
-    opacity: 1;
-  }
-.images >img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /* padding-inline:100px; */
+.steps{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:#555;
+    color:#fff;
+    place-items:center;
 }
-
-.image-text{
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index:3;
+.steps > div{
     height:100%;
     width:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color:#ffffff;
-    opacity:0;
-    transition:all 1s ease 0.3s;
+}
+.h3{
+    color:#ffbc00;
+}
+.pre {
+    overflow-y: auto;
+    height: 30vh;
 }
 .footer {
     background-color: #333;
