@@ -66,8 +66,8 @@ li{
     border-radius: 0.5rem;
     cursor: pointer;
     border: none;
-    background-color: #ffffff;
-    color: #0F1729;
+    background-color: #2711cd;
+    
 }
 .header-info span{
     animation:color-change 1.5s infinite;
@@ -77,11 +77,17 @@ li{
         to{color:green}
         
     }
+#hide{
+    color:yellow;
+}
 .header-info >button>a{
     text-decoration:none;
+    color:rgb(211, 225, 16);
+    font:600;
+    font-size:1rem;
 }
 button:hover{
-    background-color: #290f12;
+    background-color: #db0f34;
 }
 .container{
     padding:20px;
@@ -127,6 +133,7 @@ button:hover{
 .fourth{
     display:flex;
     margin-top:15px;
+    width:100%;
 }
 .icon1{
     display: flex;
