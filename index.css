@@ -6,7 +6,9 @@
     padding:0;
     font-family: "Nunito", sans-serif;
  }
-
+html{
+    scroll-behavior: smooth;
+}
  body{
     overflow-x: hidden;
  }
@@ -205,7 +207,6 @@ button:hover{
     background-color: #ffbc00;
     transition: all 1s;
 }
-
 .process{
         position:absolute;
         top:0;
